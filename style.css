@@ -1,8 +1,6 @@
 * {box-sizing: border-box;}
 
-body{
-    margin: 60px;
-}
+
 
 .top{
     position: relative;
@@ -27,7 +25,9 @@ nav li {
     margin: 10px;
     margin-left: 15px;
 }
-
+.img{
+    width: 100%;
+}
 h1 {
     font-family: 'Montserrat', sans-serif;
      color: black;
