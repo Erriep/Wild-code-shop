@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+
+body{
+    margin: 60px;
+}
+
+.top{
+    position: relative;
+    height: 101px;
+}
+
+header{
+    border: 1px solid black;
+}
+
+.bar{
+    justify-content: center;
+    border: 1px solid red;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    display: flex;
+    margin: 10px;
+    margin-left: 15px;
+}
