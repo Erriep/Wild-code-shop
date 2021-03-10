@@ -11,16 +11,12 @@ header {
   border: 1px solid black;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-}
 nav li {
   display: flex;
   margin: 10px;
   margin-left: 15px;
 }
-.img {
+.img1 {
   width: 100%;
 }
 h1 {
@@ -82,4 +78,8 @@ footer {
 .logo {
   display: flex;
   justify-content: center;
+}
+
+.fond1 {
+  width: 100%;
 }
