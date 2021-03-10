@@ -1,97 +1,98 @@
 /* les 3 blocks */
 
 .leftBody {
-    width: 25vw;
+  width: 25vw;
 }
 
 .centerBody {
-    display: flex;
-    justify-content: center;
-    width: 50vw;
+  display: flex;
+  justify-content: center;
+  width: 50vw;
 }
 
 .rightBody {
-    width: 25vw;
+  width: 25vw;
 }
 
 /* image */
 
-.img {
-    width: 100vw;
-    /*display: flex;
-    justify-content: center;*/
-}
-
-img {
-    padding-right: 3vw;
-    padding-left: 3vw;
-}
-
 .name {
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 2em;
-    font-weight: 600;
-    padding-bottom: 1em;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 1em;
 }
 
 .price {
-    font-family: 'Fascinate', cursive;
-    font-size: 4em;
-    font-weight:900;
+  font-family: "Fascinate", cursive;
+  font-size: 4em;
+  font-weight: 900;
 }
 
-
-
-.leftBody , .centerBody , .rightBody {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-
+.leftBody,
+.centerBody,
+.rightBody {
+  /*display: flex;*/
+  /*flex-direction: row;*/
 }
 
 .body {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Style des menus */
 
-.sizeButton , .colorButton{
-    background-color: #4CAF50;
-    color: white;
-    padding: 4px;
-    font-size: 16px;
-    border: none;
-  }
+.sizeButton,
+.colorButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+}
 
-.sizeChoice , .colorChoice , .quantity , .validity {
-    /*position: relative;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-  }
-  
-.menuSize , .menuColor{
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-.menuSize a , .menuColor a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.sizeChoice,
+.colorChoice,
+.quantity,
+.validity {
+  /*position: relative;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+.menuSize,
+.menuColor {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menuSize a,
+.menuColor a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
 /* Change color of dropdown links on hover */
-.menuSize a:hover , .menuColor a:hover{background-color: #ddd;}
+.menuSize a:hover,
+.menuColor a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.sizeChoice:hover .menuSize , .colorChoice:hover .menuColor {display: block;}
+.sizeChoice:hover .menuSize,
+.colorChoice:hover .menuColor {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.sizeChoice:hover .sizeButton , .colorChoice:hover .colorButton {background-color: #3e8e41;}
-
-
+.sizeChoice:hover .sizeButton,
+.colorChoice:hover .colorButton {
+  background-color: #3e8e41;
+}
