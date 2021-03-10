@@ -83,3 +83,10 @@ footer {
 .fond1 {
   width: 100%;
 }
+
+.companyName {
+  display: flex;
+  justify-content: center;
+  color: rgb(244, 172, 4);
+  font: italic small-caps bold 30px/2 cursive;
+}
