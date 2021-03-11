@@ -12,6 +12,7 @@
 
 .rightBody {
   width: 25vw;
+
 }
 
 /* image */
@@ -39,6 +40,7 @@
 .body {
   display: flex;
   flex-direction: row;
+  padding-top : 50px;
 }
 
 /* Style des menus */
@@ -95,4 +97,10 @@
 .sizeChoice:hover .sizeButton,
 .colorChoice:hover .colorButton {
   background-color: #3e8e41;
+}
+
+.img:hover {
+    cursor:pointer;
+    transform:scale(1.8);
+  }
 }
