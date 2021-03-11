@@ -70,7 +70,7 @@ ul.primary li:last-child a {
 }
 
 ul.primary li a:hover {
-  color: #000;
+  color: rgb(244, 172, 4);
 }
 
 /* subs */
@@ -242,7 +242,7 @@ ul.primary li:hover > a {
     background: transparent;
   }
   50% {
-    background: darkorange;
+    background: rgb(244, 172, 4);
   }
   100% {
     background: transparent;
@@ -250,13 +250,13 @@ ul.primary li:hover > a {
 }
 @keyframes b {
   0% {
-    background: darkorange;
+    background: rgb(244, 172, 4);
   }
   50% {
     background: transparent;
   }
   100% {
-    background: darkorange;
+    background: rgb(244, 172, 4);
   }
 }
 

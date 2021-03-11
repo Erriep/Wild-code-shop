@@ -11,18 +11,12 @@ header {
   border: 1px solid black;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-}
 nav li {
   display: flex;
   margin: 10px;
   margin-left: 15px;
 }
-.img {
-  width: 100%;
-}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   color: black;
@@ -82,4 +76,11 @@ footer {
 .logo {
   display: flex;
   justify-content: center;
+}
+
+.companyName {
+  display: flex;
+  justify-content: center;
+  color: rgb(244, 172, 4);
+  font: italic small-caps bold 30px/2 cursive;
 }
