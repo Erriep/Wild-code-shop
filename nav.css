@@ -1,0 +1,280 @@
+.bar {
+  background: rgb(255, 255, 255);
+  font-family: helvetica, arial, serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrap {
+  display: inline-block;
+  -webkit-box-shadow: 0 0 70px #fff;
+  -moz-box-shadow: 0 0 70px #fff;
+  box-shadow: 0 0 70px #fff;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+li {
+  float: left;
+}
+
+/* clear'n floats */
+ul:after {
+  clear: both;
+}
+
+ul:before,
+ul:after {
+  content: " ";
+  display: table;
+}
+
+nav {
+  position: relative;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(bottom, #ffffff 7%, #ffffff 100%);
+  background-image: -moz-linear-gradient(bottom, #ffffff 7%, #ffffff 100%);
+  background-image: -o-linear-gradient(bottom, #ffffff 7%, #ffffff 100%);
+  background-image: linear-gradient(bottom, #ffffff 7%, #ffffff 100%);
+  text-align: center;
+  letter-spacing: 1px;
+
+  -webkit-box-shadow: 2px 2px 3px rgb(255, 255, 255);
+  -moz-box-shadow: 2px 2px 3px rgb(255, 255, 255);
+  box-shadow: 2px 2px 3px rgb(255, 255, 255);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* prime */
+ul.primary li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #ffffff;
+}
+
+ul.primary li:last-child a {
+  border-right: none;
+}
+
+ul.primary li a:hover {
+  color: #000;
+}
+
+/* subs */
+ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #bebebe;
+  width: 35%;
+  display: none;
+}
+
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  border-bottom: 1px dotted #ccc;
+  border-right: none;
+  color: #000;
+  padding: 15px 30px;
+}
+
+ul.sub li:last-child a {
+  border-bottom: none;
+}
+
+ul.sub li a:hover {
+  color: #000;
+  background: #eeeeee;
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover a {
+  background: #fff;
+  color: #666;
+  text-shadow: none;
+}
+
+ul.primary li:hover > a {
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .decor {
+    padding: 3px;
+  }
+
+  .wrap {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  li {
+    float: none;
+  }
+
+  ul.primary li:hover a {
+    background: none;
+    color: #8b8b8b;
+    text-shadow: 1px 1px #000;
+  }
+
+  ul.primary li:hover ul {
+    display: block;
+    background: #272727;
+    color: #fff;
+  }
+
+  ul.sub {
+    display: block;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  ul.sub li a {
+    background: #272727;
+    border: none;
+    color: #8b8b8b;
+  }
+
+  ul.sub li a:hover {
+    color: #ccc;
+    background: none;
+  }
+}
+
+#rock1 {
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  animation: b 6s infinite;
+}
+#rock2 {
+  position: absolute;
+  left: 200px;
+  top: -25px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  animation: a 6s infinite;
+}
+#rock3 {
+  position: absolute;
+  left: 585px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  animation: a 6s infinite;
+}
+#rock4 {
+  position: absolute;
+  left: 385px;
+  top: 90px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  animation: b 6s infinite;
+}
+#rock5 {
+  position: absolute;
+  left: 60px;
+  top: 140px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  animation: a 6s infinite;
+}
+#rock6 {
+  position: absolute;
+  left: 500px;
+  top: -25px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  animation: a 6s infinite;
+}
+#rock7 {
+  position: absolute;
+  left: 60px;
+  top: -55px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  animation: b 6s infinite;
+}
+#rock8 {
+  position: absolute;
+  left: 530px;
+  top: 130px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  animation: b 6s infinite;
+}
+@keyframes a {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: darkorange;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes b {
+  0% {
+    background: darkorange;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: darkorange;
+  }
+}
+
+#div1 {
+  position: absolute;
+  left: calc(50% - 300px);
+  top: calc(50% - 150px);
+  width: 600px;
+  height: 100px;
+  border: 20px solid rgb(60, 60, 60);
+  border-radius: 100px;
+}
+#diva1 {
+  position: absolute;
+  width: 590px;
+  height: 90px;
+  border: 5px solid orange;
+  border-radius: 100px;
+  background: orange;
+  transition: 0.6s;
+}
