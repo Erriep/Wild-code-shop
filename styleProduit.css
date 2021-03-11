@@ -12,7 +12,10 @@
 
 .rightBody {
   width: 25vw;
-
+  display: flex;
+  flex-direction: column;
+  
+  padding-top : 50px;
 }
 
 /* image */
@@ -28,20 +31,26 @@
   font-family: "Fascinate", cursive;
   font-size: 4em;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 
-.leftBody,
-.centerBody,
-.rightBody {
-  /*display: flex;*/
-  /*flex-direction: row;*/
-}
 
 .body {
   display: flex;
-  flex-direction: row;
-  padding-top : 50px;
+
 }
+
+.rightBody {
+  justify-content: space-between;
+}
+
+.bottomMini {
+  width: 100vw;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* Style des menus */
 
@@ -52,15 +61,11 @@
   padding: 4px;
   font-size: 16px;
   border: none;
-}
+  margin-bottom: 20px;
 
-.sizeChoice,
-.colorChoice,
-.quantity,
-.validity {
-  /*position: relative;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
+}
+.quantity {
+  margin-bottom: 20px;
 }
 
 .menuSize,
@@ -101,6 +106,22 @@
 
 .img:hover {
     cursor:pointer;
-    transform:scale(1.8);
+    transform:scale(1.2);
   }
+
+.icon {
+  height: 50px;
+
+}
+
+.iconSocial {
+  padding-top: 40px;
+}
+
+.miniProduit {
+  padding-right: 20px;
+}
+
+.bottomMini {
+  margin-bottom: 20px;
 }
