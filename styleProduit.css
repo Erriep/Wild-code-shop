@@ -111,11 +111,14 @@
 
 .icon {
   height: 50px;
-
+  padding-right: 10px;
 }
 
 .iconSocial {
-  padding-top: 40px;
+  
+  display: flex;
+  flex-direction: row;
+
 }
 
 .miniProduit {
@@ -124,4 +127,10 @@
 
 .bottomMini {
   margin-bottom: 20px;
+}
+
+.textPartage {
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
 }
