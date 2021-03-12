@@ -22,19 +22,25 @@
 /* image */
 
 .name {
-  font-family: "RocknRoll One", sans-serif;
+  font-family: 'Akaya Telivigala', cursive;
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 800;
   padding-bottom: 1em;
 }
 
 .price {
-  font-family: "Fascinate", cursive;
+  font-family: 'Fascinate', cursive;
   font-size: 4em;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+
 }
 
+.sizeColor {
+  display: flex;
+  flex-direction: row;
+}
 
 .body {
   display: flex;
@@ -57,7 +63,7 @@
 
 .sizeButton,
 .colorButton {
-  background-color: #4caf50;
+  background-color:rgb(244, 172, 4);
   color: white;
   padding: 4px;
   font-size: 16px;
@@ -102,7 +108,8 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .sizeChoice:hover .sizeButton,
 .colorChoice:hover .colorButton {
-  background-color: #3e8e41;
+  background-color: rgb(244, 172, 4);
+  color: black;
 }
 
 .img:hover {
@@ -135,3 +142,4 @@
   font-size: 1.2em;
   font-weight: 600;
 }
+
