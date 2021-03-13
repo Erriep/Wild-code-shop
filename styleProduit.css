@@ -1,8 +1,13 @@
 /* les 3 blocks */
 
+  body {
+    overflow-x: hidden; /*contournement du pb...*/
+ }
+
+
 .leftBody {
   width: 25vw;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
 }
 
 .centerBody {
@@ -39,6 +44,15 @@
 .sizeColor {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.quantityValidity {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 60%;
+  position: relative;
 }
 
 .body {
@@ -58,44 +72,59 @@
   justify-content: center;
 }
 
-
-/* Style des menus */
-
 .sizeButton,
 .colorButton {
   background-color:rgb(244, 172, 4);
   color: white;
-  padding: 4px;
+  /*padding: 4px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px;*/
   font-size: 16px;
   border: none;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  /*margin-bottom: 20px;
+  margin-right: 20px;*/
+  width: 150px;
+  height: 51px;
+}
+
+.textQuantity {
+  font-weight: 800;
 
 }
-.quantity {
-  margin-bottom: 20px;
+
+.selectQuantity {
+    border: none; 
+    color: black;
+    cursor: pointer;
+    width: 50px;
+    height: 55px;
+    border: 2px solid #000000;
+    border-right: none;
+}
+
+.selectQuantity:hover {
+background-color: black;
+color: white;
 }
 
 .validatButton {
-  background-color: white;
-  color: black;
+  background-color: #000000;
+  color: white;  
   border: 2px solid #555555;  
+  border-left: none;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 
 }
 
 .validatButton:hover {
-  background-color: #555555;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .menuSize,
@@ -103,7 +132,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -133,16 +162,24 @@
 .colorChoice:hover .colorButton {
   background-color: rgb(244, 172, 4);
   color: black;
+  width: 150px;
+  height: 51px;
 }
 
 .img {
   transition:0.2s;
 }
 
+.imgOverflow {
+  overflow:hidden;
+  transition:0.2s;
+}
+
 
 .img:hover {
-    cursor:pointer;
-    transform:scale(2.2);
+  cursor:pointer;
+  transform:scale(2.2);
+  
   }
 
 .icon {
