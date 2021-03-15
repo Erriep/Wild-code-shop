@@ -7,19 +7,19 @@ section {
     
     display: flex;
     flex-wrap: wrap;
-    
-    margin-left: -8px;
-    margin-right: -8px;
+    justify-content: space-around;
+  
+   
     
     
 }
 
 .img-container {
-    padding-left: 8px;
-    padding-right: 8px;
-    overflow: hidden;
-    height: 500px;
-    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    height: auto;
+    width: auto;
     
 
     }
@@ -28,7 +28,7 @@ section {
     display: flex;
     max-width: 100%;
     height: auto;
-    padding: 10px;
+    
     transform: scale(0.7);
       
 }
@@ -53,3 +53,8 @@ div {
     transform: scale(1);
 }
 
+.detail-product {
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+}

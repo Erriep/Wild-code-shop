@@ -1,13 +1,20 @@
 /* les 3 blocks */
 
+  body {
+    overflow-x: hidden; /*contournement du pb...*/
+ }
+
+
 .leftBody {
   width: 25vw;
+  /*padding-left: 10px;*/
 }
 
 .centerBody {
   display: flex;
   justify-content: center;
   width: 50vw;
+  overflow:hidden;
 }
 
 .rightBody {
@@ -18,22 +25,35 @@
   padding-top : 50px;
 }
 
-/* image */
-
 .name {
-  font-family: "RocknRoll One", sans-serif;
+  font-family: 'Akaya Telivigala', cursive;
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 800;
   padding-bottom: 1em;
 }
 
 .price {
-  font-family: "Fascinate", cursive;
+  font-family: 'Fascinate', cursive;
   font-size: 4em;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+
 }
 
+.sizeColor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.quantityValidity {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 60%;
+  position: relative;
+}
 
 .body {
   display: flex;
@@ -42,6 +62,7 @@
 
 .rightBody {
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .bottomMini {
@@ -51,21 +72,59 @@
   justify-content: center;
 }
 
-
-/* Style des menus */
-
 .sizeButton,
 .colorButton {
-  background-color: #4caf50;
+  background-color:rgb(244, 172, 4);
   color: white;
-  padding: 4px;
+  /*padding: 4px;
+  padding-left: 20px;
+  padding-right: 20px;*/
   font-size: 16px;
   border: none;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;
+  margin-right: 20px;*/
+  width: 150px;
+  height: 51px;
+}
+
+.textQuantity {
+  font-weight: 800;
 
 }
-.quantity {
-  margin-bottom: 20px;
+
+.selectQuantity {
+    border: none; 
+    color: black;
+    cursor: pointer;
+    width: 50px;
+    height: 55px;
+    border: 2px solid #000000;
+    border-right: none;
+}
+
+.selectQuantity:hover {
+background-color: black;
+color: white;
+}
+
+.validatButton {
+  background-color: #000000;
+  color: white;  
+  border: 2px solid #555555;  
+  border-left: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+.validatButton:hover {
+  background-color: white;
+  color: black;
 }
 
 .menuSize,
@@ -73,7 +132,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -101,21 +160,38 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .sizeChoice:hover .sizeButton,
 .colorChoice:hover .colorButton {
-  background-color: #3e8e41;
+  background-color: rgb(244, 172, 4);
+  color: black;
+  width: 150px;
+  height: 51px;
 }
 
+.img {
+  transition:0.2s;
+}
+
+.imgOverflow {
+  overflow:hidden;
+  transition:0.2s;
+}
+
+
 .img:hover {
-    cursor:pointer;
-    transform:scale(1.2);
+  cursor:pointer;
+  transform:scale(2.2);
+  
   }
 
 .icon {
-  height: 50px;
-
+  height: 30px;
+  padding-right: 20px;
 }
 
 .iconSocial {
-  padding-top: 40px;
+  
+  display: flex;
+  flex-direction: row;
+
 }
 
 .miniProduit {
@@ -125,3 +201,11 @@
 .bottomMini {
   margin-bottom: 20px;
 }
+
+.textPartage {
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+

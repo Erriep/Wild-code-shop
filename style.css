@@ -7,7 +7,6 @@
   height: 101px;
 }
 
-
 nav li {
   display: flex;
   margin: 10px;
@@ -77,6 +76,8 @@ footer {
 .logo {
   display: flex;
   justify-content: center;
+
+  height: 100px;
 }
 
 .companyName {
