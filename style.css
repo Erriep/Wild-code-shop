@@ -61,10 +61,14 @@ footer {
 }
 
 .find {
+  color: white;
   margin: 20px;
   padding: 20px;
 }
 
+.find a{
+  color: white;
+}
 .social {
   padding: 20px;
   margin: 20px;
@@ -81,3 +85,4 @@ footer {
   color: rgb(244, 172, 4);
   font: italic small-caps bold 30px/2 cursive;
 }
+
