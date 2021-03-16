@@ -91,3 +91,16 @@ footer {
   color: rgb(244, 172, 4);
   font: italic small-caps bold 30px/2 cursive;
 }
+
+.mosaic2 img {
+  width: 92%;
+  height: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mosaic2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
