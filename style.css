@@ -29,8 +29,13 @@ h1 {
 .mosaic {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.mosaic img {
+  width: 97%;
+  height: 108%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 article {
@@ -65,7 +70,7 @@ footer {
   padding: 20px;
 }
 
-.find a{
+.find a {
   color: white;
 }
 .social {
@@ -86,4 +91,3 @@ footer {
   color: rgb(244, 172, 4);
   font: italic small-caps bold 30px/2 cursive;
 }
-
