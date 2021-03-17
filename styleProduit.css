@@ -1,3 +1,47 @@
+@media (width <= 1200px) {
+  body { background-color: rgb(255, 214, 214); }
+  
+  
+  
+ 
+  
+  .body { 
+flex-direction: column;
+
+    
+  }
+  
+  .leftBody {
+   
+  
+ 
+    }
+  
+  .centerBody {
+    width: 100vw;
+    position: absolute;
+    order: -1;
+     }
+  
+  .rightBody {
+
+    }
+
+  .imgOverflow img {
+    width: 100vw;
+    position: relative;
+
+  }
+
+ .miniProduit { display: none }
+
+
+}
+
+
+
+@media screen {
+  
 /* les 3 blocks */
 
   body {
@@ -5,10 +49,11 @@
  }
 
  .body {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-columns: 33.3%;
-  grid-auto-rows: 100;
+  display: flex;
+  /*grid-template-rows: repeat(3, 1fr);*/
+  /*grid-auto-columns: 33.3%;*/
+  /*grid-auto-columns: 1;*/
+  
 
 }
 
@@ -19,47 +64,43 @@
 
 
 .leftBody {
-  grid-column: 1 / 3;
-  grid-row: 1/2;
+  /*grid-column: 1 / 3;
+  grid-row: 1/2;*/
   width: 25vw;
   position: relative
 }
 
 .centerBody {
-  grid-column: 2 / 3;
-  grid-row: 1/2;
+  /*grid-column: 2 / 3;
+  grid-row: 1/2;*/
   position: relative;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*width: 50vw;
-  overflow:hidden;*/
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  overflow:hidden;
 }
 
 .rightBody {
-  grid-column: 3 / 3;
-  grid-row: 1/2;
+  /*grid-column: 3 / 3;
+  grid-row: 1/2;*/
   
   position: relative
-  /*display: flex;*/
+  display: flex;
   width: 25vw;
-  /*flex-direction: column;
+  flex-direction: column;
   justify-content: space-between;
   margin-left: 20px;
-  padding-top : 50px;*/
+  padding-top : 50px;
 }
 
-/*.rightBody {
-  
-}*/
-
 .bottomMini {
-  grid-column: 2/3;
-  grid-row: 2;
+  /*grid-column: 2/3;
+  grid-row: 2 / 2;*/
   position: relative;
   
-  /*padding-top: 50px;*/
-  /*display: flex;*/
-  /*justify-content: center;*/
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -158,6 +199,7 @@
   position: relative;
   text-align: center;
   color: white;
+  text-overflow: "";
 }
 
 .containerEtiquette img {
@@ -168,9 +210,10 @@
 }
 .textEtiquette {
   position: absolute;
+  text-overflow: "";
   top: 30%;
   left: 35%;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 .textEtiquette p:first-child{
   font-family: 'Courier New', Courier, monospace;
@@ -213,12 +256,6 @@
   margin-top: 60%;
   position: relative;
 }
-
-
-
-
-
-
 
 
 .img {
@@ -264,4 +301,4 @@
   font-weight: 600;
 }
 
-
+}
