@@ -83,14 +83,14 @@ footer {
   margin: 20px;
 }
 
-.logo {
+.logo a {
   display: flex;
   justify-content: center;
 
   height: 100px;
 }
 
-.companyName {
+.companyName a{
   display: flex;
   justify-content: center;
   color: rgb(244, 172, 4);
