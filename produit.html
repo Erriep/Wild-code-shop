@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styleProduit.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,11 +17,7 @@
 </head>
 <header>
   <div class="companyName"><a href="index.html">Wild Code Shop</a></div>
-  <div class="logo">
-    <a href="index.html">
-    <img src="../Wild-code-shop/img/wcslogo.png" />
-  </a>
-  </div>
+  <div class="logo"><a href="index.html"><img src="img/wcslogo.png" /></a></div>
   <nav class="bar">
     <div class="wrap">
       <span class="decor"></span>
@@ -102,7 +99,7 @@
             <div class="quantityValidity">
               <div class="quantity">
                   <label for="selectQuantity" class="textQuantity">Quantité</label>
-                  <input type="number" class="selectQuantity" name="selectQuantity" min="1" max="20">
+                  <input type="number" class="selectQuantity" name="selectQuantity" min="1" max="20" value="1">
               </div>
               <div class="validity">
                   <button class="validatButton">Ajouter au panier</button>
@@ -118,13 +115,16 @@
         </div>
 
         <div class=rightBody>
-            <div>
-                <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laborum nemo impedit cumque quis itaque sapiente quae nobis, quibusdam atque, repudiandae at. Aliquam amet dicta, suscipit repellendus nostrum sunt magnam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, neque velit, praesentium consectetur sint reiciendis dolorem possimus illum cum, placeat quis est? Quae enim nam at natus placeat autem officia.
-                </p>
+            <div class="containerEtiquette">
+                <img src="img/etiquette.png" alt="picsEtiquette">
+                <div class="textEtiquette">
+                  <p>Tissu ripstop résistant
+                  Avec technologie DryVent The North Face
+                  Traitement durable déperlant pour une meilleure protection
+                  Imperméable, coupe-vent, respirant et permet l'évacuation de la vapeur d'eau</p>
+                  <p>Matière principale : 100% nylon.</p>
+
+                </div>
             </div>
             <div class="socialProduit">
               <p class=textPartage>Partager ce produit !</p>
@@ -148,13 +148,24 @@
     </section>
 
     <section class=bottomMini>
-          <img class="miniProduit" src="img/150.png"  alt="">
-          <img class="miniProduit" src="img/150.png"  alt="">
-          <img class="miniProduit" src="img/150.png"  alt="">
+          <img class="miniProduit" src="img/manteau.JPG"  alt="">
+          <img class="miniProduit" src="img/manteau2.JPG"  alt="">
+          <img class="miniProduit" src="img/manteau3.JPG"  alt="">
     </section>
 </body>
 <footer>
-  <div class="find">adress</div>
-  <div class="social">social</div>
+  <div class="find">
+    <p>OTHER STUFF</p>
+    <br />
+    <p>À PROPOS</p>
+    <p><a href="contact.html"> CONTACTEZ NOUS</a></p>
+    <p><a href="size.html"> LES TAILLES</a></p>
+  </div>
+
+  <div class="social">
+    <p>WILD CODE SHOP</p>
+    <br />
+    <p>© Wild Code Shop. All rights reserved</p>
+  </div>
 </footer>
 </html>

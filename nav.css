@@ -16,8 +16,10 @@
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+
   display: block;
+  font: italic small-caps bold 20px/2 cursive;
+  color: black;
 }
 
 ul {
@@ -90,7 +92,7 @@ ul.sub li {
 ul.sub li a {
   border-bottom: 1px dotted #ccc;
   border-right: none;
-  color: #000;
+  color: rgb(244, 172, 4);
   padding: 15px 30px;
 }
 
@@ -117,7 +119,7 @@ ul.primary li:hover a {
 }
 
 ul.primary li:hover > a {
-  color: #000;
+  color: rgb(244, 172, 4);
 }
 
 @media only screen and (max-width: 600px) {
