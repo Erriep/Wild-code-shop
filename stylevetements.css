@@ -42,11 +42,6 @@ section {
 
 }
 
-div {
-    display: flex;
-}
-
-
 
 
 .img-container a:hover {
@@ -57,4 +52,8 @@ div {
     padding-bottom: 60px;
     text-align: center;
     font-size: 30px;
+}
+
+h1 {
+    padding-top: 90px;
 }
