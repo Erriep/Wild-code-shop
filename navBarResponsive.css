@@ -132,3 +132,9 @@
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+
+@media (min-width: 600px) {
+  #menuToggle {
+    display: none;
+  }
+}
