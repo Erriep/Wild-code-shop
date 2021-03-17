@@ -1,7 +1,3 @@
-.slideshow {
-  list-style-type: none;
-}
-
 .slideshow,
 .slideshow:after {
   display: flex;
@@ -87,4 +83,10 @@
 
 .no-cssanimations .cb-slideshow li span {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .slideshow {
+    height: 20em;
+  }
 }
