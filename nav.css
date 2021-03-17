@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .bar {
+    display: none;
+  }
+}
+
 .bar {
   background: rgb(255, 255, 255);
   font-family: helvetica, arial, serif;
