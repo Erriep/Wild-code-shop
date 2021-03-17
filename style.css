@@ -15,7 +15,7 @@ nav li {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  color: black;
+
   text-align: center;
   line-height: 30px;
   font-size: 55px;
@@ -24,6 +24,7 @@ h1 {
   font-weight: 900;
   letter-spacing: 7px;
   text-transform: uppercase;
+  color: rgb(244, 172, 4);
 }
 
 .mosaic {
