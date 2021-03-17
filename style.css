@@ -15,7 +15,7 @@ nav li {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  color: black;
+
   text-align: center;
   line-height: 30px;
   font-size: 55px;
@@ -24,13 +24,23 @@ h1 {
   font-weight: 900;
   letter-spacing: 7px;
   text-transform: uppercase;
+  color: rgb(244, 172, 4);
 }
 
 .mosaic {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.mosaic img {
+  width: 92%;
+  height: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: scale(0.9);
+}
+.mosaic img:hover {
+  transform: scale(1);
 }
 
 article {
@@ -65,7 +75,7 @@ footer {
   padding: 20px;
 }
 
-.find a{
+.find a {
   color: white;
 }
 .social {
@@ -73,17 +83,33 @@ footer {
   margin: 20px;
 }
 
-.logo {
+.logo a {
   display: flex;
   justify-content: center;
 
   height: 100px;
 }
 
-.companyName {
+.companyName a{
   display: flex;
   justify-content: center;
   color: rgb(244, 172, 4);
   font: italic small-caps bold 30px/2 cursive;
 }
 
+.mosaic2 img {
+  width: 92%;
+  height: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: scale(0.9);
+}
+.mosaic2 img:hover {
+  transform: scale(1);
+}
+
+.mosaic2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
