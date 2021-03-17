@@ -1,60 +1,10 @@
-@media (width <= 1200px) {
-  body { background-color: rgb(255, 214, 214); }
-  
-  
-  
- 
-  
-  .body { 
-flex-direction: column;
-
-    
-  }
-  
-  .leftBody {
-   
-  
- 
-    }
-  
-  .centerBody {
-    width: 100vw;
-    position: absolute;
-    order: -1;
-     }
-  
-  .rightBody {
-
-    }
-
-  .imgOverflow img {
-    width: 100vw;
-    position: relative;
-
-  }
-
- .miniProduit { display: none }
-
-
-}
-
-
-
 @media screen {
-  
-/* les 3 blocks */
-
-  body {
-    overflow-x: hidden; /*contournement du pb...*/
+body {
+    overflow-x: hidden;/*contournement du pb...*/
  }
 
  .body {
-  display: flex;
-  /*grid-template-rows: repeat(3, 1fr);*/
-  /*grid-auto-columns: 33.3%;*/
-  /*grid-auto-columns: 1;*/
-  
-
+  display: flex
 }
 
 
@@ -84,9 +34,9 @@ flex-direction: column;
   /*grid-column: 3 / 3;
   grid-row: 1/2;*/
   
-  position: relative
-  display: flex;
-  width: 25vw;
+  position: relative;
+  display : flex;
+  width : 25vw;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 20px;
@@ -211,9 +161,9 @@ flex-direction: column;
 .textEtiquette {
   position: absolute;
   text-overflow: "";
-  top: 30%;
-  left: 35%;
-  padding-right: 50px;
+  top: 25%;
+  left: 38%;
+  padding-right: 87px;
 }
 .textEtiquette p:first-child{
   font-family: 'Courier New', Courier, monospace;
@@ -224,7 +174,7 @@ flex-direction: column;
   font-weight: 800;
 }
 .textEtiquette p{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .nameProduit {
@@ -239,8 +189,7 @@ flex-direction: column;
   font-size: 4em;
   font-weight: 900;
   margin-bottom: 40px;
-  margin-right: 50px;
-
+  margin-right: 50px
 }
 
 .sizeColor {
@@ -300,5 +249,196 @@ flex-direction: column;
   font-size: 1.2em;
   font-weight: 600;
 }
+
+}
+
+@media (width < 1200px) {
+  body { 
+    overflow-x: hidden; /*contournement du pb...*/
+  }
+
+
+
+  .body { 
+    flex-direction: column;
+}
+  
+  .leftBody {
+    width: 100vw;
+    position: relative
+}
+ 
+  .centerBody {
+    width: 100vw;
+    position: relative;
+    order: -1;
+}
+  
+  .rightBody {
+
+    }
+
+  .imgOverflow img {
+    width: 100vw;
+    position: relative;
+
+  }
+
+ .miniProduit { display: none }
+
+ .price {
+ 
+  width: 100vw;
+
+}
+
+.nameProduit {
+  width: 100vw;
+  padding-bottom: 0.5em;
+}
+.sizeChoice , .colorChoice{
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  }
+
+.sizeColor {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  width: 100vw;
+  height: 41px;
+  margin-bottom: 100px;
+}
+
+.menuSize,
+.menuColor {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+  height: 51px;
+  box-shadow: none;
+   
+}
+
+.menuSize a {
+  border-radius: 75%;
+  border: solid;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 25px; /* centrage vertical */
+  width: 100vw;
+}
+
+.menuColor a {
+  border-radius: 75%;
+  border: solid;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 5px; /* centrage vertical */
+  font-size: 0%; /* ne pas afficher le text */
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 5px;
+  box-shadow: none;
+  border-color: black;
+}
+
+.menuColor .blue { background: blue }
+.menuColor .green { background: green }
+.menuColor .white { background: white }
+.menuColor .black { background: black }
+.menuColor .red { background: red }
+
+
+.quantityValidity {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+   
+    justify-content: left;
+    margin-top: 0;
+  
+
+
+  }
+
+.quantity {
+  display: flex;
+  position: relative;
+}
+.selectQuantity {
+    display: flex;
+    position: relative;
+}
+
+.textQuantity {
+  line-height: 50px; /* centrage vertical */
+  margin-right: 10px;
+
+}
+
+.validatButton {
+  background-color:rgb(244, 172, 4);
+  color: white;  
+  border: 2px solid #555555;  
+  border-left: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.textEtiquette {
+  position: relative;
+  
+  top: 0;
+  left: 0;
+  padding-right: 0;
+ 
+}
+
+.containerEtiquette {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.textEtiquette p {
+text-align: left;
+width: 80vw;
+color: black;
+margin-bottom: 10px;
+}
+
+.containerEtiquette img {
+ display: none;
+ padding-right: 0;
+ padding-left: 0;
+}
+
+.socialProduit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.textPartage {
+  display: flex;
+  width: 100vw;
+}
+
 
 }
