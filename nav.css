@@ -16,15 +16,7 @@
 
 a {
   display: block;
-<<<<<<< HEAD
 
-  font: small-caps 20px/2 cursive;
-
-  font-size: 20px;
-
-=======
-  font: ;
->>>>>>> 485021eb3c717eba5bedfd9d659d5df02d9a940a
   color: black;
 
   font-size: 25px;
@@ -60,7 +52,6 @@ nav {
   background-image: -o-linear-gradient(bottom, #ffffff 7%, #ffffff 100%);
   background-image: linear-gradient(bottom, #ffffff 7%, #ffffff 100%);
   text-align: center;
-  letter-spacing: 1px;
 
   -webkit-box-shadow: 2px 2px 3px rgb(255, 255, 255);
   -moz-box-shadow: 2px 2px 3px rgb(255, 255, 255);
