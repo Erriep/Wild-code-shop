@@ -5,17 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wildcodeshop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="navBarResponsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
+      <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="#"><li>HOMME</li></a>
+            <a href="#"><li>FEMME</li></a>
+            <a href="#"><li>ACCESSOIRES</li></a>
+          </ul>
+        </div>
+      </nav>
       <div class="companyName"><a href="index.html">Wild Code Shop</a></div>
-      <div class="logo"><a href="index.html"><img src="img/wcslogo.png" /></a></div>
+      <div class="logo">
+        <a href="index.html"><img src="img/wcslogo.png" /></a>
+      </div>
+
       <nav class="bar">
         <div class="wrap">
           <span class="decor"></span>
@@ -64,18 +108,17 @@
       </nav>
     </header>
 
-    <div class="fond1">
-      <ul class="slideshow">
-        <li><span></span></li>
-        <li><span>2</span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-      </ul>
-    </div>
+    <ul class="slideshow">
+      <li><span></span></li>
+      <li><span>2</span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+    </ul>
+
     <h1>FRESH OFF THE LINE</h1>
     <div class="mosaic">
-      <div><img src="img/manteau.JPG" alt="" /></div>
+      <div>   <a href="produit.html"><img src="img/manteau.JPG" alt="" /></div> </a>
       <div><img src="img/sac.JPG" alt="" /></div>
       <div><img src="img/T-shirtblanc.JPG" alt="" /></div>
       <div><img src="img/pullzip.JPG" alt="" /></div>
@@ -83,10 +126,20 @@
     <article>
       <div class="mosaic2">
         <div>
-          <a href="modehomme.html"><img src="img/modehomme10.jpg" alt="modehomme" /></a>
+          <a href="modehomme.html"
+            ><img src="img/modehomme10.jpg" alt="modehomme"
+          /></a>
         </div>
-        <div><a href="modefemme.html"><img src="img/modefemme10.jpg" alt="modefemme" /></a></div>
-        <div><a href="accessoires.html"><img src="img/accessoires10.jpg" alt="Accessoires" /></a></div>
+        <div>
+          <a href="modefemme.html"
+            ><img src="img/modefemme10.jpg" alt="modefemme"
+          /></a>
+        </div>
+        <div>
+          <a href="accessoires.html"
+            ><img src="img/accessoires10.jpg" alt="Accessoires"
+          /></a>
+        </div>
       </div>
     </article>
 
@@ -101,16 +154,13 @@
 
       <div class="social">
         <p>WILD CODE SHOP</p>
-        <br>
-        <p> © Wild Code Shop. All rights reserved</p>
-        
-      <a href="https://fr-fr.facebook.com/" class="fa fa-facebook"></a>
-      <a href="https://twitter.com/?lang=fr" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/?hl=fr" class="fa fa-instagram"></a>
+        <br />
+        <p>© Wild Code Shop. All rights reserved</p>
 
+        <a href="https://fr-fr.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/?lang=fr" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/?hl=fr" class="fa fa-instagram"></a>
       </div>
-
-
     </footer>
   </body>
 </html>

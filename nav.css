@@ -280,3 +280,9 @@ ul.primary li:hover > a {
   background: orange;
   transition: 0.6s;
 }
+
+@media (max-width: 600px) {
+  .bar {
+    display: none;
+  }
+}
