@@ -1,4 +1,3 @@
-
 .companyName {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -12,7 +11,7 @@
   text-decoration: none;
 }
 a {
-      text-decoration: none;
+  text-decoration: none;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black;
   font-weight: 500;
@@ -264,11 +263,27 @@ section p {
 }
 
 @media (max-width: 600px) {
-
+  .companyName {
+    font-family: auto, serif;
+    font-size: 21px;
+  }
   h1 {
-    font-size: 29px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+  }
+  .mosaic {
+    flex-direction: column;
+  }
+  .mosaic2 {
+    flex-direction: column;
   }
   h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
+  .submit-btn {
+
+   
+    float: left;
+  
 }
