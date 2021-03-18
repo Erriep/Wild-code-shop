@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   color: black;
+  text-decoration: none;
 }
 a {
   text-decoration: none;
@@ -263,6 +264,7 @@ section p {
 }
 
 @media (max-width: 600px) {
+
   h1 {
     font-size: 29px;
   }
