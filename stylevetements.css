@@ -43,9 +43,16 @@ section {
 .detail-product {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: left;
-  font-size: 15px;
+  align-items: center;  
+  font-family: "IBM Plex Sans", sans-serif;
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.detail-product a{
+  
+  font-size: 30px;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -54,9 +61,7 @@ section {
 }
 
 .detail-product {
-  padding-bottom: 60px;
-  text-align: center;
-  font-size: 30px;
+  
 }
 
 h1 {
