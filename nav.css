@@ -16,11 +16,15 @@
 
 a {
   display: block;
+<<<<<<< HEAD
 
   font: small-caps 20px/2 cursive;
 
   font-size: 20px;
 
+=======
+  font: ;
+>>>>>>> 485021eb3c717eba5bedfd9d659d5df02d9a940a
   color: black;
 
   font-size: 25px;
