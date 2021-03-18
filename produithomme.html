@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wildcodeshop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styleProduit.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="navBarResponsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<header>
+  <!--    Made by Erik Terwan    -->
+  <!--   24th of November 2015   -->
+  <!--        MIT License        -->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+A fake / hidden checkbox is used as click reciever,
+so you can use the :checked selector on it.
+-->
+      <input type="checkbox" />
+
+      <!--
+Some spans to act as a hamburger.
+
+They are acting like a real hamburger,
+not that McDonalds stuff.
+-->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+Too bad the menu has to be inside of the button
+but hey, it's pure CSS magic.
+-->
+      <ul id="menu">
+        <a href="#"><li>HOMME</li></a>
+        <a href="#"><li>FEMME</li></a>
+        <a href="#"><li>ACCESSOIRES</li></a>
+      </ul>
+    </div>
+  </nav>
+  <div class="companyName"><a href="index.html">Wild Code Shop</a></div>
+  <div class="logo">
+    <a href="index.html"><img src="img/wcslogo.png" /></a>
+  </div>
+
+  <nav class="bar">
+    <div class="wrap">
+      <span class="decor"></span>
+      <nav>
+        <ul class="primary">
+          <div id="rock1"></div>
+          <div id="rock2"></div>
+          <div id="rock3"></div>
+          <div id="rock4"></div>
+          <div id="rock5"></div>
+          <div id="rock6"></div>
+          <div id="rock7"></div>
+          <div id="rock8"></div>
+          <div id="block">
+            <li>
+              <a href="">HOMME</a>
+              <ul class="sub">
+                <li><a href="modehomme.html">HOMME</a></li>
+                <li><a href="">MANTEAU</a></li>
+                <li><a href="">SWEATSHIRT</a></li>
+                <li><a href="">T-SHIRT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">FEMME</a>
+              <ul class="sub">
+                <li><a href="modefemme.html">FEMME</a></li>
+                <li><a href="">MANTEAU</a></li>
+                <li><a href="">SWEATSHIRT</a></li>
+                <li><a href="">T-SHIRT</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">ACCESSOIRES</a>
+              <ul class="sub">
+                <li><a href="accessoires.html">ACCESSOIRES</a></li>
+                <li><a href="">BUREAU</a></li>
+                <li><a href="">SACS</a></li>
+                <li><a href="">MASQUES</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+</header>
+
+<body>
+    <section class=body>
+        <div class="leftBody">
+          
+            <div class="namePrice">
+                <p class="nameProduit">Manteau Wild Forest</p>
+                <p class="price">39,99 €</p>
+            </div>
+          <div class=sizeColor>
+            <div class="sizeChoice">
+              <button class="sizeButton">Taille</button>
+              <div class="menuSize">
+                <a href="">S</a>
+                <a href="">M</a>
+                <a href="">L</a>
+                <a href="">XL</a>
+              </div>
+            </div>
+            <div class="colorChoice">
+                <button class="colorButton">Couleur</button>
+                <div class="menuColor">
+                  <a href="" class="white">Blanc</a>
+                  <a href="" class="blue">Bleu</a>
+                  <a href="" class="green">Vert</a>
+                  <a href="" class="red">Rouge</a>
+                  <a href="" class="black">Noir</a>
+                </div>
+            </div>
+            <div class="containerSize">
+              <a href="size.html" id="sizeGuide">Guide des tailles</a>
+            </div>
+
+          </div>
+            <div class="quantityValidity">
+              <div class="quantity">
+                  <label for="selectQuantity" class="textQuantity">Quantité</label>
+                  <input type="number" class="selectQuantity" name="selectQuantity" min="1" max="20" value="1">
+              </div>
+              <div class="validity">
+                  <button class="validatButton">Ajouter au panier</button>
+              </div>
+            </div>
+            
+        </div>
+        
+        <div class="centerBody">
+          <div class="imgOverflow">
+            <img class="img" src="img/manteau.JPG"  alt="">
+          </div>
+        </div>
+
+        <div class=rightBody>
+            <div class="containerEtiquette">
+                <img src="img/etiquette.png" alt="picsEtiquette">
+                <div class="textEtiquette">
+                  <p>Tissu ripstop résistant
+                  Avec technologie DryVent The North Face
+                  Traitement durable déperlant pour une meilleure protection
+                  Imperméable, coupe-vent, respirant et permet l'évacuation de la vapeur d'eau</p>
+                  </br>
+                  <p>Matière principale : </br>100% nylon.</p>
+
+                </div>
+            </div>
+            <div class="socialProduit">
+              <p class=textPartage>Partager ce produit !</p>
+              <div class="iconSocial">
+              
+              <a class="linkFacebook" href="https://www.facebook.com/sharer.php?u=http://www.wildcodeshop.io/produit.html;t=Stay Inside Turtle Tee" rel="noreferrer" target="_blank">
+                 <img class="icon" src="img/iconFacebook.png"  alt="">
+              </a>
+              <a class="linkTwitter" href="https://twitter.com/intent/tweet?text=Viens%20voir%20ce%20produit%20qui%20déchire +file:///home/erriep/Documents/Projet1/Wild-code-shop/produit.html" rel="noreferrer" target="_blank">
+                <img class="icon" src="img/iconTwitter.png"  alt="" >
+              </a>
+              <a href="https://pinterest.com/pin/create/button/?url=file:///home/erriep/Documents/Projet1/Wild-code-shop/produit.html;media=file:///home/erriep/Documents/Projet1/Wild-code-shop/img/manteau.JPG?v=1612505723&amp;description=WILD%20CODE%20SHOP%20%20Super%20produit" count-layout="none" rel="noreferrer" target="_blank">
+                <img class="icon" src="img/iconPinterest.png"  alt="">
+              </a>
+              <a href="">
+                <img class="icon" src="img/iconInsta.png"  alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+   
+</section>
+        <div class=bottomMini>
+              <img class="miniProduit" src="img/manteau.JPG"  alt="">
+              <img class="miniProduit" src="img/manteau2.JPG"  alt="">
+              <img class="miniProduit" src="img/manteau3.JPG"  alt="">
+        </div>
+
+    
+  </body> 
+<footer>
+  <div class="find">
+    <p>OTHER STUFF</p>
+    <br />
+    <p>À PROPOS</p>
+    <p><a href="contact.html"> CONTACTEZ NOUS</a></p>
+    <p><a href="size.html"> LES TAILLES</a></p>
+  </div>
+
+  <div class="social">
+    <p>WILD CODE SHOP</p>
+    <br />
+    <p>© Wild Code Shop. All rights reserved</p>
+  </div>
+</footer>
+
+</html>
