@@ -24,7 +24,7 @@ h1 {
   font-weight: 900;
   letter-spacing: 7px;
   text-transform: uppercase;
-  color: rgb(244, 172, 4);
+  color: black;
 }
 
 .mosaic {
@@ -93,7 +93,7 @@ footer {
 .companyName a {
   display: flex;
   justify-content: center;
-  color: rgb(244, 172, 4);
+  color: black;
   font: italic small-caps bold 30px/2 cursive;
 }
 
