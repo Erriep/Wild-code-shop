@@ -1,8 +1,7 @@
-body {
-  background-color: #ffffff;
-  padding-top: 85px;
-}
+
 .companyName {
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-family: auto, serif;
   line-height: 33px;
   font-size: 35px;
@@ -13,9 +12,10 @@ body {
   text-decoration: none;
 }
 a {
-  text-decoration: none;
+      text-decoration: none;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black;
+  font-weight: 500;
 }
 
 .top {

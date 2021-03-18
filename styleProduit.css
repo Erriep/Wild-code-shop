@@ -137,6 +137,16 @@
     height: 51px;
   }
 
+.containerSize {
+    font-size: 1.2em;
+    font-weight: 800;
+    line-height: 50px;
+    font-style: italic;
+  }
+
+
+
+
   .containerEtiquette {
     position: relative;
     text-align: center;
@@ -316,7 +326,7 @@
 
   .menuColor a {
     border-radius: 75%;
-    border: solid;
+    border: none;
     margin-right: 5px;
     margin-left: 5px;
     text-align: center;
@@ -338,6 +348,7 @@
   }
   .menuColor .white {
     background: white;
+    border: solid;
   }
   .menuColor .black {
     background: black;
@@ -423,4 +434,13 @@
     display: flex;
     width: 100vw;
   }
+
+  .namePrice {
+  position: relative;
+  padding-bottom: 30px;
+
+}
+
+
+
 }
