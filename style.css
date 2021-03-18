@@ -98,6 +98,8 @@ footer {
 }
 
 .companyName a {
+  margin-bottom: 25px;
+  margin-top: 25px;
   text-decoration: none;
   font-family: auto, serif;
   line-height: 33px;
@@ -152,7 +154,7 @@ footer {
 
 @media (max-width: 600px) {
   .companyName a {
-    font: italic small-caps bold 18px/2 cursive;
+  font-family: auto, serif;
   }
   h1 {
     display: flex;
