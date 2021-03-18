@@ -60,10 +60,20 @@ section {
   transform: scale(1);
 }
 
-.detail-product {
-  
-}
+
 
 h1 {
   padding-top: 90px;
 }
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+
+  }
+
+h1 {
+  justify-content: center;
+}}
+
+

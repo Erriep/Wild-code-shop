@@ -9,16 +9,48 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="stylevetements.css" />
+    <link rel="stylesheet" href="navBarResponsive.css"/>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
+      <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="modehomme.html"><li>HOMME</li></a>
+            <a href="modefemme.html"><li>FEMME</li></a>
+            <a href="accessoires.html"><li>ACCESSOIRES</li></a>
+          </ul>
+        </div>
+      </nav>
       <div class="companyName"><a href="index.html">Wild Code Shop</a></div>
       <div class="logo">
-        <a href="index.html">
-        <img src="../Wild-code-shop/img/wcslogo.png" />
-      </a>
+        <a href="index.html"><img src="img/wcslogo.png" /></a>
       </div>
+
       <nav class="bar">
         <div class="wrap">
           <span class="decor"></span>
