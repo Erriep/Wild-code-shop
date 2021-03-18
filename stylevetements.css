@@ -6,22 +6,38 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .img-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: auto;
-  width: auto;
+  justify-content:flex-end;
+  align-items: center;
+  flex-direction: column; 
+  height: 700px;
+  width: 500px;
 }
 
-.img-container a {
+.img-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 450px;
+}
+
+.img-product img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.img-product     a {
   display: flex;
   max-width: 100%;
   height: auto;
 
-  transform: scale(0.7);
+  transform: scale(0.85);
 }
 
 .detail-product {
