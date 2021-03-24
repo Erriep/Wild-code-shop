@@ -14,11 +14,48 @@
     <link rel="stylesheet" href="contsize.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="slide.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="navBarResponsive.css" />
+
+
   </head>
 
   <body>
     <header>
-      <div class="companyName">Wild Code Shop</div>
+        <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="modehomme.html"><li>HOMME</li></a>
+            <a href="modefemme.html"><li>FEMME</li></a>
+            <a href="accessoires.html"><li>ACCESSOIRES</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="companyName"> Wild Code Shop</div>
       <div class="logo">
        <a href="index.html"> <img src="img/wcslogo.png" /></a>
       </div>
@@ -58,9 +95,9 @@
                   <a href="">ACCESSOIRES</a>
                   <ul class="sub">
                     <li><a href="produitaccessoire.html">ACCESSOIRES</a></li>
-                    <li><a href="">MASQUE</a></li>
-                    <li><a href="">STYLO</a></li>
-                    <li><a href="">PELUCHE</a></li>
+                    <li><a href="">BUREAU</a></li>
+                    <li><a href="">SACS</a></li>
+                    <li><a href="">MASQUES</a></li>
                   </ul>
                 </li>
               </div>
@@ -78,7 +115,7 @@
         <table>
             <thead>
             <tr>
-                <td colspan="2"> T-SHIRT MIX</td>
+                <th colspan="2"> T-SHIRT MIX</th>
             </tr>
             </thead>
             <tbody>
@@ -105,14 +142,14 @@
             </tr>
             </tbody>
         </table>
-          <p>La longueur des t-shirts et des polos varie selon le style. Toutefois, la longueur moyenne d'une taille M est de 27,5 pouces / 70  cm au milieu du dos, du col à l'ourlet. Veuillez consulter « Infos et entretien » sur chaque page produit pour connaître les mesures de longueurs spécifiques aux articles.</p>
+          <p>La longueur des t-shirts et des polos varie selon le style. Toutefois, la longueur moyenne d'une taille M est de 27,5 pouces / 70  cm au milieu du dos, du col à l'ourlet. <br> Veuillez consulter « Infos et entretien » sur chaque page produit pour connaître les mesures de longueurs spécifiques aux articles.</p>
         </section>
         <section>
         <table>
             <img src="img/sweatshirt.jpg" alt="SWEATSHIRT">
             <thead>
             <tr>
-                <td colspan="2"> SWEATSHIRT</td>
+                <th colspan="2"> SWEATSHIRT</th>
             </tr>
             </thead>
             <tbody>
@@ -139,7 +176,7 @@
             </tr>
             </tbody>
         </table>
-        <p>La longueur des sweats et sweats à capuche varie selon le style. Toutefois, la longueur moyenne d'une taille M est de 27,5 pouces / 70  cm au milieu du dos, du col à l'ourlet. Veuillez consulter « Infos et entretien » sur chaque page produit pour connaître les mesures de longueurs spécifiques aux articles.</p>
+        <p>La longueur des sweats et sweats à capuche varie selon le style. Toutefois, la longueur moyenne d'une taille M est de 27,5 pouces / 70  cm au milieu du dos, du col à l'ourlet. <br> Veuillez consulter « Infos et entretien » sur chaque page produit pour connaître les mesures de longueurs spécifiques aux articles.</p>
         </section>
     </div>
 

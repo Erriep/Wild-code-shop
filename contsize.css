@@ -285,5 +285,18 @@ section p {
 
    
     float: left;
-  
+  }
+
+  section { 
+    margin: 0px;
+    padding: 0px;
+  }
+  section p {
+    margin-top: 24px;
+    margin-bottom: 23px;
+  }   
+  footer{
+    display: inline-block;
+  }  
+  }
 }

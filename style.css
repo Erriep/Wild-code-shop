@@ -167,4 +167,7 @@ footer {
   .mosaic2 {
     flex-direction: column;
   }
+  footer{
+    display: inline-block;
+  }
 }
