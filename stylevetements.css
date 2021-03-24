@@ -24,7 +24,7 @@ section {
   justify-content: center;
   align-items: center;
   background-image: url("img/manteau.JPG");
-  background-position: center;
+  background-position:center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 500px;
@@ -53,10 +53,10 @@ section {
 
 }
 
-.img-container a:hover {
+/*.img-container a:hover {
   transform: scale(1);
 }
-
+*/
 h1 {
   padding-top: 90px;
 }

@@ -1,46 +1,44 @@
-const manProducts = [
+const accProducts = [
     {
-        product :"Manteau Homme",
-        price :39.99,
-        picture :"img/manteau.JPG",
-        link : "produithomme.html"
+        product :"Tapis de souris",
+        price :14.99,
+        picture :"img/Tapis_souris.JPG",
+        link : "produitaccessoire.html"
     },
     {
-        product :"Sweat",
+        product :"Clé USB",
+        price : 9.99,
+        picture : "img/cléUSB.JPG",
+        link : ""
+    },
+    {
+        product :"Sac en tissu",
+        price : 4.99,
+        picture : "img/sac.JPG",
+        link : ""
+    },
+    {
+        product :"Sac à dos",
         price : 29.99,
-        picture : "img/Sweathomme.JPG",
+        picture : "img/sacàdos.JPG",
         link : ""
     },
     {
-        product :"T-Shirt",
-        price : 14.99,
-        picture : "img/T-shirtblanc.JPG",
+        product :"Stylo",
+        price : 2.99,
+        picture : "img/stylo.JPG",
         link : ""
     },
     {
-        product :"Pull-Over",
-        price : 24.99,
-        picture : "img/pullzip.JPG",
-        link : ""
-    },
-    {
-        product :"Manteau",
-        price : 49.99,
-        picture : "img/manteauRouge.JPG",
-        link : ""
-    },
-    {
-        product :"Polo",
-        price : 14.99,
-        picture : "img/polobleu.JPG",
+        product :"Mug",
+        price : 7.99,
+        picture : "img/mug.JPG",
         link : ""
     }
 
 ];
 
-
 const productGrid = document.querySelector(".product-grid");
-
 
 const createProduct = (manProduct, manPrice, imageURL, linkToProduct) => {
     const imgContainer = document.createElement("div");
@@ -50,17 +48,17 @@ const createProduct = (manProduct, manPrice, imageURL, linkToProduct) => {
     const pageLink = document.createElement("a");
     pageLink.href =`${linkToProduct}`;
     imgContainer.appendChild(pageLink);
-
-    const imgProduct = document.createElement("div");
-    imgProduct.style.backgroundImage = `url(${imageURL})`;
-    imgProduct.classList.add("img-product");
-    pageLink.appendChild(imgProduct);
     pageLink.addEventListener("mouseover", ()=>{
         pageLink.style.transform = "scale(1)";
     })
     pageLink.addEventListener("mouseleave", ()=>{
         pageLink.style.transform = "scale(0.85)";
     })
+
+    const imgProduct = document.createElement("div");
+    imgProduct.style.backgroundImage = `url(${imageURL})`;
+    imgProduct.classList.add("img-product");
+    pageLink.appendChild(imgProduct);
 
     const productTitle = document.createElement("h4");
     productTitle.classList.add("product-title");
@@ -73,11 +71,8 @@ const createProduct = (manProduct, manPrice, imageURL, linkToProduct) => {
     pageLink.appendChild(productPrice);
 }
 
-
-    for (let i=0; i < manProducts.length; i++){
-        createProduct(manProducts[i].product, manProducts[i].price, manProducts[i].picture, manProducts[i].link);
+    for (let i=0; i < accProducts.length; i++){
+        createProduct(accProducts[i].product, accProducts[i].price, accProducts[i].picture, accProducts[i].link);
     }
-
-
 
     

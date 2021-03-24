@@ -1,38 +1,38 @@
-const manProducts = [
+const womanProducts = [
     {
-        product :"Manteau Homme",
+        product :"Manteau Femme",
         price :39.99,
-        picture :"img/manteau.JPG",
-        link : "produithomme.html"
+        picture :"img/manteaufemme.JPG",
+        link : "produitfemme.html"
     },
     {
-        product :"Sweat",
-        price : 29.99,
-        picture : "img/Sweathomme.JPG",
+        product :"Polo",
+        price : 19.99,
+        picture : "img/poloRose.JPG",
         link : ""
     },
     {
         product :"T-Shirt",
         price : 14.99,
-        picture : "img/T-shirtblanc.JPG",
+        picture : "img/T-shirtfemme.JPG",
         link : ""
     },
     {
-        product :"Pull-Over",
-        price : 24.99,
-        picture : "img/pullzip.JPG",
+        product :"T-Shirt",
+        price : 14.99,
+        picture : "img/T-shirtnoir.JPG",
         link : ""
     },
     {
         product :"Manteau",
         price : 49.99,
-        picture : "img/manteauRouge.JPG",
+        picture : "img/manteaugris.JPG",
         link : ""
     },
     {
-        product :"Polo",
-        price : 14.99,
-        picture : "img/polobleu.JPG",
+        product :"Sweat",
+        price : 29.99,
+        picture : "img/SweatRose.JPG",
         link : ""
     }
 
@@ -50,17 +50,17 @@ const createProduct = (manProduct, manPrice, imageURL, linkToProduct) => {
     const pageLink = document.createElement("a");
     pageLink.href =`${linkToProduct}`;
     imgContainer.appendChild(pageLink);
-
-    const imgProduct = document.createElement("div");
-    imgProduct.style.backgroundImage = `url(${imageURL})`;
-    imgProduct.classList.add("img-product");
-    pageLink.appendChild(imgProduct);
     pageLink.addEventListener("mouseover", ()=>{
         pageLink.style.transform = "scale(1)";
     })
     pageLink.addEventListener("mouseleave", ()=>{
         pageLink.style.transform = "scale(0.85)";
     })
+
+    const imgProduct = document.createElement("div");
+    imgProduct.style.backgroundImage = `url(${imageURL})`;
+    imgProduct.classList.add("img-product");
+    pageLink.appendChild(imgProduct);
 
     const productTitle = document.createElement("h4");
     productTitle.classList.add("product-title");
@@ -74,10 +74,6 @@ const createProduct = (manProduct, manPrice, imageURL, linkToProduct) => {
 }
 
 
-    for (let i=0; i < manProducts.length; i++){
-        createProduct(manProducts[i].product, manProducts[i].price, manProducts[i].picture, manProducts[i].link);
+    for (let i=0; i < womanProducts.length; i++){
+        createProduct(womanProducts[i].product, womanProducts[i].price, womanProducts[i].picture, womanProducts[i].link);
     }
-
-
-
-    
