@@ -9,38 +9,40 @@ section {
   align-items: flex-start;
 }
 
-.img-container {
+.img-container a{
   display: flex;
   justify-content:flex-end;
   align-items: center;
   flex-direction: column; 
   height: 700px;
-  width: 500px;
+  width: 500px; 
+  transform: scale(0.85);
 }
 
 .img-product {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  width: 450px;
-}
-
-.img-product img {
-  height: 100%;
+  background-image: url("img/manteau.JPG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
   width: 100%;
-
+  
 }
 
-.img-product     a {
+
+.product-title {
   display: flex;
-  max-width: 100%;
-  height: auto;
-
-  transform: scale(0.85);
+  justify-content: center;
+  align-items: center;  
+  font-family: "IBM Plex Sans", sans-serif;  
+  text-align: center;
+  font-size: 30px;
 }
 
-.detail-product {
+.product-price {
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -48,19 +50,12 @@ section {
   padding-bottom: 60px;
   text-align: center;
   font-size: 30px;
-}
 
-.detail-product a{
-  
-  font-size: 30px;
-  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .img-container a:hover {
   transform: scale(1);
 }
-
-
 
 h1 {
   padding-top: 90px;
@@ -69,7 +64,13 @@ h1 {
 @media (max-width: 600px) {
   .row {
     flex-direction: column;
+    
 
+  }
+
+  .product-grid{
+    
+    justify-content: center;
   }
 
 h1 {
