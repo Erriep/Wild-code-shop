@@ -297,6 +297,7 @@ section p {
   }   
   footer{
     display: inline-block;
+    width: 100vh;
   }  
 
 }
